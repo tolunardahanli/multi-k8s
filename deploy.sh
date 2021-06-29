@@ -1,5 +1,5 @@
 docker build -t tolunardahanli/multi-client:latest -t tolunardahanli/multi-client:$SHA -f ./client/Dockerfile ./client
-docket build -t tolunardahanli/multi-server:latest -t tolunardahanli/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t tolunardahanli/multi-server:latest -t tolunardahanli/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t tolunardahanli/multi-worker:latest -t tolunardahanli/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 docker push tolunardahanli/multi-client:latest
 docker push tolunardahanli/multi-server:latest
